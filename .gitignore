@@ -1,0 +1,6 @@
+.mozapi
+.vscode
+generated
+node_modules
+output
+yarn.lock

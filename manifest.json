@@ -1,0 +1,57 @@
+{
+	"manifest_version": 2,
+	"name": "Pinboard ToRead",
+	"version": "0.1.2",
+	"description": "Bookmark pages as \"to read\" to Pinboard",
+	"icons": {
+		"16" : "output/generated/icon-16.png",
+		"24" : "output/generated/icon-24.png",
+		"32" : "output/generated/icon-32.png",
+		"48" : "output/generated/icon-48.png",
+		"64" : "output/generated/icon-64.png",
+		"96" : "output/generated/icon-96.png",
+		"128": "output/generated/icon-128.png"
+	},
+
+	"applications": {
+		"gecko": {
+			"id": "pinboard-toread@example.com"
+		}
+	},
+
+	"permissions": [
+		"activeTab",
+		"storage",
+		"notifications",
+		"https://api.pinboard.in/v1/*"
+	],
+
+	"commands": {
+		"bookmark": {
+			"description": "Bookmark current page",
+			"suggested_key": {
+				"default": "Alt+R"
+			}
+		}
+	},
+
+	"browser_action": {
+		"default_icon": {
+			"16" : "output/generated/icon-16.png",
+			"24" : "output/generated/icon-24.png",
+			"32" : "output/generated/icon-32.png",
+			"48" : "output/generated/icon-48.png",
+			"64" : "output/generated/icon-64.png",
+			"96" : "output/generated/icon-96.png",
+			"128": "output/generated/icon-128.png"
+		}
+	},
+
+	"background": {
+		"page": "background.html"
+	},
+
+	"options_ui": {
+		"page": "options.html"
+	}
+}

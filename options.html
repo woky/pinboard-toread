@@ -1,0 +1,54 @@
+<html>
+	<head>
+		<title>Pinboard ToRead</title>
+		<style>
+			input[type="number"] {
+				text-align: right;
+			}
+			.settings {
+				display: grid;
+				grid-template-columns: max-content 500px;
+				grid-gap: 10px;
+				align-items: baseline;
+			}
+			.buttons {
+				grid-column: span 2;
+			}
+			td {
+				padding: 5px;
+				vertical-align: top;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Pinboard ToRead</h1>
+
+		<div>
+			<h2>Options</h2>
+			<form class=settings>
+				<label for=apiToken>API token</label>
+				<span><input type=text id=apiToken required></span>
+
+				<div class=buttons>
+					<button type=submit>Save</button>
+				</div>
+			</form>
+		</div>
+
+		<div>
+			<h2>Help</h2>
+			<div>
+				<h3>Keyboard Actions</h3>
+				<table class=keytable>
+					<tr>
+						<td><code>Alt-R</code></td>
+						<td>
+							<p>Mark current page as <i>to read</i></p>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<script src="output/generated/options.js"></script>
+	</body>
+</html>

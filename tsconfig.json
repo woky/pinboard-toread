@@ -1,0 +1,15 @@
+{
+	"compilerOptions": {
+		"module": "es6",
+		"target": "esnext",
+		"noImplicitAny": false,
+		"sourceMap": false,
+		"noEmitOnError": false,
+		"outDir": "output/generated",
+		"strictNullChecks": true,
+		"typeRoots": ["node_modules/@types", "node_modules/web-ext-types"]
+	},
+	"exclude": [
+		"dump"
+	]
+}
